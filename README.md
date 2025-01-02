@@ -673,6 +673,16 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
   </tbody>
 </table>
 
+## Long video understanding benchmarks
+1. **Video-MME**: Popular video understanding evaluation benchmark, including short, medium, and long video resources with 900 videos and 2,700 annotations. The average duration is 17.0 minutes. [Project](https://video-mme.github.io/home_page.html), [GitHub](https://github.com/BradyFU/Video-MME), [Dataset](https://github.com/BradyFU/Video-MME?tab=readme-ov-file#-dataset), [Paper](https://arxiv.org/pdf/2405.21075)
+
+2. **HourVideo**: Hour-level video understanding evaluation benchmark, including long video resources of 500 videos and 12,976 annotations. The average duration is 45.7 minutes. [Project](https://hourvideo.stanford.edu/), [GitHub](https://github.com/keshik6/HourVideo), [Dataset](https://huggingface.co/datasets/HourVideo/HourVideo), [Paper](https://arxiv.org/abs/2411.04998)
+
+3. **HLV-1K**: Hour-level video understanding evaluation benchmark, including long video resources of 1,009 videos and 14,847 annotations. The average duration is 55.0 minutes. [Project](), [GitHub](), [Dataset](), [Paper]()
+
+4. **LVBench**: Hour-level video understanding evaluation benchmark, including long video resources of 103 videos and 1,549 annotations. The average duration is 68.4 minutes. [Project](https://lvbench.github.io/), [GitHub](https://github.com/THUDM/LVBench), [Dataset](https://huggingface.co/datasets/THUDM/LVBench), [Paper](https://arxiv.org/pdf/2406.08035)
+
+
 
 ## Performance on long video benchamarks
 <img width="969" alt="image" src="https://github.com/user-attachments/assets/fb0aa46a-e413-4eb5-9841-015e56679672"/>
