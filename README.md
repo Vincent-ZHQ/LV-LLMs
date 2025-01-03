@@ -678,7 +678,7 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
 
 2. **HourVideo**: Hour-level video understanding evaluation benchmark, including long video resources of 500 videos and 12,976 annotations. The average duration is 45.7 minutes. [Project](https://hourvideo.stanford.edu/), [GitHub](https://github.com/keshik6/HourVideo), [Dataset](https://huggingface.co/datasets/HourVideo/HourVideo), [Paper](https://arxiv.org/abs/2411.04998)
 
-3. **HLV-1K**: Hour-level video understanding evaluation benchmark, including long video resources of 1,009 videos and 14,847 annotations. The average duration is 55.0 minutes. [Project](), [GitHub](), [Dataset](), [Paper]()
+3. **HLV-1K**: Hour-level video understanding evaluation benchmark, including long video resources of 1,009 videos and 14,847 annotations. The average duration is 55.0 minutes. [Project](https://vincent-zhq.github.io/hlv-1k-project/), [GitHub](https://github.com/Vincent-ZHQ/HLV-1K), [Dataset](https://github.com/Vincent-ZHQ/HLV-1K), [Paper](https://arxiv.org/submit/6108440/view)
 
 4. **LVBench**: Hour-level video understanding evaluation benchmark, including long video resources of 103 videos and 1,549 annotations. The average duration is 68.4 minutes. [Project](https://lvbench.github.io/), [GitHub](https://github.com/THUDM/LVBench), [Dataset](https://huggingface.co/datasets/THUDM/LVBench), [Paper](https://arxiv.org/pdf/2406.08035)
 
@@ -692,4 +692,11 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
 <img width="946" alt="image" src="https://github.com/user-attachments/assets/9c652905-c3ba-4095-b5c3-b34f314518ca" />
 
 
-
+### citation
+If you use our code or find our CA-MSER useful in your research, please consider citing:
+    @article{zou2024seconds,
+      title={From Seconds to Hours: Reviewing MultiModal Large Language Models on Comprehensive Long Video Understanding},
+      author={Zou, Heqing and Luo, Tianze and Xie, Guiyang and Lv, Fengmao and Wang, Guangcong and Chen, Juanyang and Wang, Zhuochen and Zhang, Hansheng and Zhang, Huaijian and others},
+      journal={arXiv preprint arXiv:2409.18938},
+      year={2024}
+    }
