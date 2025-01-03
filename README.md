@@ -694,6 +694,7 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
 
 ### citation
 If you use our code or find our CA-MSER useful in your research, please consider citing:
+
     @article{zou2024seconds,
       title={From Seconds to Hours: Reviewing MultiModal Large Language Models on Comprehensive Long Video Understanding},
       author={Zou, Heqing and Luo, Tianze and Xie, Guiyang and Lv, Fengmao and Wang, Guangcong and Chen, Juanyang and Wang, Zhuochen and Zhang, Hansheng and Zhang, Huaijian and others},
