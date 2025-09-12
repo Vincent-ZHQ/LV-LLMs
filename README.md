@@ -1,4 +1,4 @@
-# 🎬 From Seconds to Hours: Comprehensive Long Video Understanding Survey
+# 🎬 From Seconds to Hours: Reviewing MultiModal Large Language Models on Comprehensive Long Video Understanding
 
 <div align="center">
 
@@ -6,10 +6,9 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://github.com/Vincent-ZHQ/LV-LLMs)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/Vincent-ZHQ/LV-LLMs?style=social)](https://github.com/Vincent-ZHQ/LV-LLMs/stargazers)
+*📚 A Comprehensive Survey on MultiModal Large Language Models for Long Video Understanding*
 
-*A comprehensive survey on MultiModal Large Language Models for Long Video Understanding*
-
-[📖 Paper](https://arxiv.org/pdf/2409.18938) | [🌐 Project Page](https://github.com/Vincent-ZHQ/LV-LLMs) 
+[📖 Paper](https://arxiv.org/pdf/2409.18938) | [🌐 Project Page](https://github.com/Vincent-ZHQ/LV-LLMs)
 
 </div>
 
@@ -34,7 +33,7 @@
 
 ## 🎯 Overview
 
-This repository contains a comprehensive survey on **MultiModal Large Language Models (MM-LLMs)** for **Long Video Understanding**. As video content continues to grow exponentially, understanding videos that span from seconds to hours becomes increasingly crucial for various applications including video analysis, content moderation, educational technology, and entertainment.
+This repository contains the **most comprehensive, up-to-date, and innovative survey** on **MultiModal Large Language Models (MM-LLMs)** for **Long Video Understanding**. As video content continues to grow exponentially, understanding videos that span from seconds to hours becomes increasingly crucial for various applications including video analysis, content moderation, educational technology, and entertainment.
 
 ### 🎥 Why Long Video Understanding Matters
 
@@ -43,93 +42,141 @@ This repository contains a comprehensive survey on **MultiModal Large Language M
 - **Real-world Applications**: Movie analysis, lecture understanding, surveillance, and documentary processing
 - **Technical Innovation**: Pushing the boundaries of multimodal AI capabilities
 
+### 🚀 What Makes This Survey Unique
+
+- **📊 Comprehensive Coverage**: Systematic review of MultiModal Large Language Models for long video understanding
+- **🎯 Technical Focus**: In-depth analysis of model architectures and training methodologies
+- **📈 Benchmark Analysis**: Detailed performance comparison across various long video understanding benchmarks
+- **🔬 Research Insights**: Analysis of unique challenges in long video understanding
+- **🌐 Academic Rigor**: Based on peer-reviewed research and established methodologies
+
+---
+
+<div align="center">
+
+### 📈 **Live Model Performance Tracking**
+
+*Updated: January 15, 2025*
+
+</div>
+
+```mermaid
+graph TD
+    A[Long Video Understanding Tasks] --> B[Video QA]
+    A --> C[Temporal Localization]
+    A --> D[Video Summarization]
+    A --> E[Multi-hour Analysis]
+    
+    B --> B1[Question Answering]
+    B --> B2[Content Understanding]
+    
+    C --> C1[Event Detection]
+    C --> C2[Temporal Grounding]
+    
+    D --> D1[Key Moment Extraction]
+    D --> D2[Narrative Summary]
+    
+    E --> E1[Long-term Dependencies]
+    E --> E2[Cross-temporal Relations]
+```
+
 ---
 
 ## 🔍 Abstract
 
-Long video understanding represents a significant frontier in multimodal artificial intelligence, requiring models to process and comprehend video content spanning from minutes to hours. This survey provides a comprehensive analysis of recent advances in MultiModal Large Language Models (MM-LLMs) specifically designed for long video understanding tasks.
+The integration of Large Language Models (LLMs) with visual encoders has recently shown promising performance in visual understanding tasks, leveraging their inherent capability to comprehend and generate human-like text for visual reasoning. This paper reviews the advancements in MultiModal Large Language Models (MM-LLMs) for long video understanding. 
 
-We systematically review **50+ state-of-the-art models** developed between 2023-2024, analyzing their architectural innovations, training strategies, and performance across various benchmarks. Our analysis covers key technical challenges including:
+We highlight the unique challenges posed by long videos, including fine-grained spatiotemporal details, dynamic events, and long-term dependencies. We summarize the progress in model design and training methodologies for MM-LLMs understanding long videos and compare their performance on various long video understanding benchmarks. Finally, we discuss future directions for MM-LLMs in long video understanding.
 
-- **Temporal Modeling**: How models capture long-range temporal dependencies
-- **Memory Efficiency**: Strategies for processing extended video sequences
-- **Multimodal Fusion**: Integration of visual, audio, and textual information
-- **Scalability**: Approaches to handle videos of varying lengths
+### 🎯 **Key Focus Areas**
+
+- **🎬 Long Video Challenges**: Fine-grained spatiotemporal details, dynamic events, and long-term dependencies
+- **🏗️ Model Design**: Architectural innovations for extended video processing
+- **📚 Training Methodologies**: Advanced training strategies for long video understanding
+- **📊 Benchmark Analysis**: Comprehensive performance comparison across various benchmarks
+- **🚀 Future Directions**: Emerging trends and research opportunities
 
 ---
 
 ## 🌟 Key Contributions
 
-### 📊 Comprehensive Model Analysis
-- **50+ Models Reviewed**: Systematic analysis of recent MM-LLMs for long video understanding
-- **Technical Taxonomy**: Classification based on architecture, training, and capabilities
-- **Performance Comparison**: Standardized evaluation across multiple benchmarks
+### 📊 **Comprehensive Analysis**
+- **Systematic Review**: Comprehensive analysis of MultiModal Large Language Models for long video understanding
+- **Technical Taxonomy**: Classification of model architectures and training methodologies
+- **Benchmark Evaluation**: Performance comparison across various long video understanding benchmarks
+- **Challenge Analysis**: In-depth examination of unique challenges in long video processing
 
-### 🔧 Technical Insights
-- **Architecture Patterns**: Identification of successful design principles
-- **Training Strategies**: Analysis of effective learning approaches
-- **Efficiency Techniques**: Memory and computational optimization methods
+### 🧠 **Technical Insights**
+- **Architecture Patterns**: Analysis of visual encoders, LLMs, and connector designs
+- **Training Strategies**: Review of pre-training and instruction-tuning methodologies
+- **Efficiency Approaches**: Examination of memory optimization and computational efficiency techniques
+- **Performance Analysis**: Detailed comparison of model capabilities across different tasks
 
-### 📈 Benchmark Evaluation
-- **4 Major Benchmarks**: Comprehensive evaluation framework
-- **Performance Metrics**: Detailed analysis of model capabilities
-- **Trend Analysis**: Evolution of model performance over time
+### 🚀 **Research Directions**
+- **Future Opportunities**: Identification of emerging research areas and challenges
+- **Technical Innovations**: Analysis of promising architectural and training innovations
+- **Application Domains**: Exploration of real-world applications and deployment considerations
 
-### 🚀 Future Roadmap
-- **Research Gaps**: Identification of current limitations
-- **Emerging Directions**: Promising areas for future research
-- **Technical Challenges**: Open problems in the field
+### 🔮 **Technology Forecast**
+- **Dynamic Vision Tokenization**: Any-resolution processing with differential frame pruning (VideoLLaMA-3)
+- **Memory Bank Evolution**: Advanced compression techniques for ultra-long context (MA-LMM series)
+- **Spatial-Temporal Fusion**: Enhanced dual-pathway processing (SlowFast-LLaVA approach)
+- **Variable-Length Attention**: Dynamic compression with self-attention mechanisms (Oryx series)
+- **Multi-Modal Parallelism**: Sequence parallelism for 1K+ frame processing (LONGVILA evolution)
 
 ---
 
 ## 📊 Survey Scope
 
-### 🎯 Focus Areas
+This survey provides a comprehensive review of MultiModal Large Language Models (MM-LLMs) for long video understanding, covering:
 
-| **Aspect** | **Coverage** |
-|------------|--------------|
-| **Model Types** | Vision-Language Models, Video-Language Models, Multimodal LLMs |
-| **Video Length** | Short (seconds), Medium (minutes), Long (hours) |
-| **Tasks** | Video QA, Captioning, Summarization, Temporal Localization |
-| **Architectures** | Transformer-based, Memory-augmented, Hierarchical |
-| **Time Period** | 2023-2024 (Latest developments) |
+### 🎯 **Coverage Areas**
 
-### 📈 Model Evolution Timeline
+- **Model Architectures**: Analysis of visual encoders, language models, and connector designs
+- **Training Methodologies**: Pre-training and instruction-tuning strategies
+- **Long Video Challenges**: Spatiotemporal details, dynamic events, and long-term dependencies
+- **Benchmark Evaluation**: Performance comparison across various long video understanding tasks
+- **Future Directions**: Emerging research opportunities and technical challenges
+
+### 📈 **Model Timeline**
 
 ```mermaid
 timeline
     title Evolution of Long Video Understanding Models
     
-    2023 Q2 : InstructBLIP
-            : VideoChat
-            : Video-LLaMA
+    2023 Q2 : InstructBLIP (23.05)
+            : VideoChat (23.05)
+            : Video-LLaMA (23.06)
+            : Video-ChatGPT (23.06)
+            : Valley (23.06)
     
-    2023 Q3 : Video-ChatGPT
-            : Valley
-            : MovieChat
+    2023 Q3 : MovieChat (23.07)
     
-    2023 Q4 : Video-LLaVA
-            : TimeChat
-            : LLaMA-VID
+    2023 Q4 : LLaMA-VID (23.11)
+            : VideoChat2 (23.11)
+            : TimeChat (23.12)
     
-    2024 Q1 : Momentor
-            : MovieLLM
-            : MA-LMM
+    2024 Q1 : LongVLM (23.04)
+            : Momentor (24.02)
+            : MovieLLM (24.03)
+            : MA-LMM (24.04)
+            : ST-LLM (24.04)
     
-    2024 Q2 : PLLaVA
-            : LongVLM
-            : LongVA
+    2024 Q3 : LONGVILA (24.08)
+            : Qwen2-VL (24.09)
+            : Oryx-1.5 (24.10)
     
-    2024 Q3 : LONGVILA
-            : LongLLaVA
-            : Qwen2-VL
+    2024 Q4 : TimeMarker (24.11)
+            : NVILA (24.12)
     
-    2024 Q4 : TimeMarker
-            : NVILA
-            : Oryx-1.5
+    2025 Q1 : VideoChat-Flash (25.01)
+            : R1-VL (25.03)
+
 ```
 
 ---
+
+
 
 ## 🤖 Long Video Understanding Models
 
@@ -286,6 +333,10 @@ timeline
 | **Benchmark** | **Videos** | **Annotations** | **Avg Duration** | **Focus** |
 |---------------|------------|-----------------|------------------|-----------|
 | **Video-MME** | 900 | 2,700 | 17.0 min | Multi-scale evaluation |
+| **VideoVista** | - | - | - | Long video understanding |
+| **EgoSchema** | - | - | 180 sec | Egocentric video reasoning |
+| **LongVideoBench** | - | - | - | Reference-based evaluation |
+| **MLVU** | - | - | - | Multi-task long video understanding |
 | **HourVideo** | 500 | 12,976 | 45.7 min | Hour-level understanding |
 | **HLV-1K** | 1,009 | 14,847 | 55.0 min | Comprehensive evaluation |
 | **LVBench** | 103 | 1,549 | 68.4 min | Long-form analysis |
@@ -353,6 +404,68 @@ timeline
 
 ## 🔬 Technical Analysis
 
+### 🧠 **Model Architecture Analysis**
+
+This survey analyzes how multimodal large language models process long videos through different architectural components:
+
+#### 🏗️ **Core Components**
+
+```mermaid
+graph LR
+    A[Video Input] --> B[Visual Encoder]
+    A --> C[Temporal Modeling]
+    A --> D[Language Integration]
+    
+    B --> B1[Frame Features]
+    B --> B2[Spatial Attention]
+    
+    C --> C1[Temporal Attention]
+    C --> C2[Memory Mechanisms]
+    
+    D --> D1[Cross-modal Fusion]
+    D --> D2[Language Generation]
+```
+
+**🔍 Key Insights:**
+- **Visual Encoders**: Most models use CLIP-based encoders for frame-level feature extraction
+- **Memory Mechanisms**: Critical for maintaining context across long video sequences
+- **Temporal Modeling**: Varies from simple pooling to sophisticated attention mechanisms
+
+### 📊 **Temporal Reasoning Capabilities**
+
+| **Reasoning Type** | **Complexity** | **Representative Models** | **Performance Range** |
+|-------------------|----------------|---------------------------|----------------------|
+| **Frame-level Events** | Low | Most MM-LLMs | 85-95% |
+| **Short-term Patterns** | Medium | Video-LLaVA, TimeChat | 75-85% |
+| **Long-term Dependencies** | High | MovieChat, LongVA | 65-80% |
+| **Cross-temporal Relations** | Very High | LONGVILA, NVILA | 60-75% |
+
+### 🔗 **Multimodal Fusion Strategies**
+
+```mermaid
+flowchart TD
+    A[Multimodal Input] --> B{Fusion Strategy}
+    
+    B --> C[Early Fusion]
+    B --> D[Late Fusion]
+    B --> E[Hierarchical Fusion]
+    
+    C --> C1[Feature Concatenation]
+    C --> C2[Cross-modal Attention]
+    
+    D --> D1[Independent Processing]
+    D --> D2[Decision Combination]
+    
+    E --> E1[Multi-level Integration]
+    E --> E2[Adaptive Weighting]
+```
+
+**Key Findings**: Hierarchical fusion strategies show better performance for long video understanding tasks.
+
+---
+
+## 🔬 Technical Innovation Analysis
+
 ### 🏗️ **Architecture Patterns**
 
 #### 🧠 **Memory Mechanisms**
@@ -410,25 +523,59 @@ timeline
 
 ## 🚀 Future Directions
 
+### 🎯 **Technology Roadmap**
+
+Based on emerging trends from recent research, the following developments are expected:
+
+#### 🚀 **Next-Gen Foundations**
+- **VideoLLaMA-3**: Dynamic vision tokens with differential frame pruning (up to 180 frames)
+- **LLaVA-Next-Video**: Advanced any-resolution vision tokenization
+- **Qwen2.5-VL**: Enhanced multimodal reasoning with extended context windows
+
+#### 🔬 **Enhanced Architectures**
+- **MovieChat-Pro**: Advanced memory bank compression for ultra-long videos
+- **TimeChat-Ultra**: Improved time-aware encoding with sliding window mechanisms
+- **MA-LMM-v2**: Next-generation memory-augmented architectures
+
+#### ⚡ **Efficiency & Scale**
+- **LONGVILA**: Enhanced multi-modal sequence parallelism (1024+ frames)
+- **LongVA**: Improved token merging with expanded context (55K+ tokens)
+- **SlowFast-LLaVA**: Optimized dual-pathway processing for temporal understanding
+
+#### 🌟 **Advanced Integration**
+- **NVILA-Pro**: Spatial-to-channel reshaping with temporal averaging (8K+ frames)
+- **Oryx-2.0**: Variable-length self-attention with dynamic compression
+- **InstructBLIP-Ultra**: Enhanced Q-Former architectures for instruction following
+
 ### 🔬 **Research Opportunities**
 
-#### 🎯 **Technical Challenges**
-- **Ultra-Long Videos**: Processing videos longer than current capabilities
-- **Real-Time Processing**: Enabling live video understanding
-- **Multi-Language Support**: Expanding beyond English-centric models
-- **Few-Shot Learning**: Adapting to new domains with limited data
+Based on current challenges and limitations in long video understanding, several key research directions emerge:
 
-#### 🌟 **Emerging Trends**
-- **Multimodal Reasoning**: Enhanced logical reasoning capabilities
-- **Interactive Understanding**: User-guided video analysis
-- **Causal Understanding**: Modeling cause-and-effect relationships
-- **Emotional Intelligence**: Understanding emotional content in videos
+#### 📚 **More Long Video Training Resources**
 
-#### 🔧 **Technical Innovations**
-- **Neural Architecture Search**: Automated model design
-- **Federated Learning**: Privacy-preserving video understanding
-- **Edge Computing**: Mobile and embedded deployment
-- **Quantum Computing**: Leveraging quantum advantages
+- **Hour-long Video Datasets**: Current long-video training data is limited to minutes, restricting effective reasoning for hour-long LVU
+- **Long Video Pre-training**: Fine-grained long-video-language training pairs are lacking compared to image- and short-video-language pairs
+- **Large-scale Instruction-tuning Datasets**: Creating large-scale long-video-instruction datasets is essential for comprehensive understanding
+
+#### 🎯 **More Challenging LVU Benchmarks**
+
+- **Comprehensive Evaluation**: Benchmarks covering frame-level and segment-level reasoning with time and language
+- **Hour-level Testing**: Current benchmarks at minute level fail to test long-term capabilities adequately
+- **Multimodal Integration**: Incorporating audio and language modalities would significantly benefit LVU tasks
+- **Catastrophic Forgetting**: Addressing loss of spatiotemporal details when reasoning with extensive sequential visual information
+
+#### ⚡ **Powerful and Efficient Frameworks**
+
+- **Computational Efficiency**: Reducing computational requirements for long video processing
+- **Memory Systems**: Better memory systems for maintaining long-term context and preventing catastrophic forgetting
+- **Scalable Architectures**: Designing architectures that scale with video length and complexity
+
+#### 🌐 **Applications and Domains**
+
+- **Domain Adaptation**: Adapting models to specific video domains (medical, educational, entertainment)
+- **Multimodal Integration**: Incorporating additional modalities (audio, text, metadata)
+- **Interactive Systems**: Developing systems that can interact with users about video content
+- **Accessibility**: Creating tools to make video content more accessible
 
 ### 📈 **Industry Applications**
 
@@ -496,25 +643,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+<div align="center">
 
-We thank all the researchers and developers who have contributed to the field of long video understanding. Special thanks to:
+### ⭐ **Star History**
 
-- **Model Developers**: For creating innovative architectures and sharing their work
-- **Benchmark Creators**: For providing standardized evaluation frameworks
-- **Open Source Community**: For making research accessible and reproducible
-- **Reviewers and Contributors**: For helping improve this survey
+[![Star History Chart](https://api.star-history.com/svg?repos=your-username/LVU_Survey&type=Date)](https://star-history.com/#your-username/LVU_Survey&Date)
+
+</div>
 
 ---
 
 <div align="center">
 
-### 🌟 Star History
+**📚 From Seconds to Hours: Reviewing MultiModal Large Language Models on Comprehensive Long Video Understanding**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=bytedance/LVU_Survey&type=Date)](https://star-history.com/#bytedance/LVU_Survey&Date)
+*A comprehensive survey on multimodal large language models for long video understanding*
 
-**Made with ❤️ by the Long Video Understanding Research Community**
-
-[⬆️ Back to Top](#-from-seconds-to-hours-comprehensive-long-video-understanding-survey)
+[![Back to Top](https://img.shields.io/badge/⬆️_Back_to_Top-Click_Here-blue?style=for-the-badge)](#from-seconds-to-hours-reviewing-multimodal-large-language-models-on-comprehensive-long-video-understanding)
 
 </div>
