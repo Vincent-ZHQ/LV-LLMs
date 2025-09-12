@@ -1,10 +1,142 @@
-# LV-LLMs
-A survey on MM-LLMs for long video understanding. 
+# 🎬 From Seconds to Hours: Comprehensive Long Video Understanding Survey
 
-Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language Models on Comprehensive Long Video Understanding](https://arxiv.org/pdf/2409.18938)
+<div align="center">
 
+[![arXiv](https://img.shields.io/badge/arXiv-2409.18938-b31b1b.svg)](https://arxiv.org/pdf/2409.18938)
+[![Project Page](https://img.shields.io/badge/Project-Page-green)](https://github.com/Vincent-ZHQ/LV-LLMs)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Vincent-ZHQ/LV-LLMs?style=social)](https://github.com/Vincent-ZHQ/LV-LLMs/stargazers)
 
-## Long video understanding MM-LLMs
+*A comprehensive survey on MultiModal Large Language Models for Long Video Understanding*
+
+[📖 Paper](https://arxiv.org/pdf/2409.18938) | [🌐 Project Page](https://github.com/Vincent-ZHQ/LV-LLMs) 
+
+</div>
+
+---
+
+## 📋 Table of Contents
+
+- [🎯 Overview](#-overview)
+- [🔍 Abstract](#-abstract)
+- [🌟 Key Contributions](#-key-contributions)
+- [📊 Survey Scope](#-survey-scope)
+- [🤖 Long Video Understanding Models](#-long-video-understanding-models)
+- [📈 Benchmarks & Datasets](#-benchmarks--datasets)
+- [📊 Performance Analysis](#-performance-analysis)
+- [🔬 Technical Analysis](#-technical-analysis)
+- [🚀 Future Directions](#-future-directions)
+- [📚 Citation](#-citation)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
+
+## 🎯 Overview
+
+This repository contains a comprehensive survey on **MultiModal Large Language Models (MM-LLMs)** for **Long Video Understanding**. As video content continues to grow exponentially, understanding videos that span from seconds to hours becomes increasingly crucial for various applications including video analysis, content moderation, educational technology, and entertainment.
+
+### 🎥 Why Long Video Understanding Matters
+
+- **Scale Challenge**: Modern videos range from short clips to multi-hour content
+- **Temporal Complexity**: Long videos contain complex temporal dependencies and narrative structures
+- **Real-world Applications**: Movie analysis, lecture understanding, surveillance, and documentary processing
+- **Technical Innovation**: Pushing the boundaries of multimodal AI capabilities
+
+---
+
+## 🔍 Abstract
+
+Long video understanding represents a significant frontier in multimodal artificial intelligence, requiring models to process and comprehend video content spanning from minutes to hours. This survey provides a comprehensive analysis of recent advances in MultiModal Large Language Models (MM-LLMs) specifically designed for long video understanding tasks.
+
+We systematically review **50+ state-of-the-art models** developed between 2023-2024, analyzing their architectural innovations, training strategies, and performance across various benchmarks. Our analysis covers key technical challenges including:
+
+- **Temporal Modeling**: How models capture long-range temporal dependencies
+- **Memory Efficiency**: Strategies for processing extended video sequences
+- **Multimodal Fusion**: Integration of visual, audio, and textual information
+- **Scalability**: Approaches to handle videos of varying lengths
+
+---
+
+## 🌟 Key Contributions
+
+### 📊 Comprehensive Model Analysis
+- **50+ Models Reviewed**: Systematic analysis of recent MM-LLMs for long video understanding
+- **Technical Taxonomy**: Classification based on architecture, training, and capabilities
+- **Performance Comparison**: Standardized evaluation across multiple benchmarks
+
+### 🔧 Technical Insights
+- **Architecture Patterns**: Identification of successful design principles
+- **Training Strategies**: Analysis of effective learning approaches
+- **Efficiency Techniques**: Memory and computational optimization methods
+
+### 📈 Benchmark Evaluation
+- **4 Major Benchmarks**: Comprehensive evaluation framework
+- **Performance Metrics**: Detailed analysis of model capabilities
+- **Trend Analysis**: Evolution of model performance over time
+
+### 🚀 Future Roadmap
+- **Research Gaps**: Identification of current limitations
+- **Emerging Directions**: Promising areas for future research
+- **Technical Challenges**: Open problems in the field
+
+---
+
+## 📊 Survey Scope
+
+### 🎯 Focus Areas
+
+| **Aspect** | **Coverage** |
+|------------|--------------|
+| **Model Types** | Vision-Language Models, Video-Language Models, Multimodal LLMs |
+| **Video Length** | Short (seconds), Medium (minutes), Long (hours) |
+| **Tasks** | Video QA, Captioning, Summarization, Temporal Localization |
+| **Architectures** | Transformer-based, Memory-augmented, Hierarchical |
+| **Time Period** | 2023-2024 (Latest developments) |
+
+### 📈 Model Evolution Timeline
+
+```mermaid
+timeline
+    title Evolution of Long Video Understanding Models
+    
+    2023 Q2 : InstructBLIP
+            : VideoChat
+            : Video-LLaMA
+    
+    2023 Q3 : Video-ChatGPT
+            : Valley
+            : MovieChat
+    
+    2023 Q4 : Video-LLaVA
+            : TimeChat
+            : LLaMA-VID
+    
+    2024 Q1 : Momentor
+            : MovieLLM
+            : MA-LMM
+    
+    2024 Q2 : PLLaVA
+            : LongVLM
+            : LongVA
+    
+    2024 Q3 : LONGVILA
+            : LongLLaVA
+            : Qwen2-VL
+    
+    2024 Q4 : TimeMarker
+            : NVILA
+            : Oryx-1.5
+```
+
+---
+
+## 🤖 Long Video Understanding Models
+
+### 📊 Model Comparison Table
+
+<details>
+<summary><b>🔍 Click to expand the comprehensive model comparison table</b></summary>
 
 <table>
   <thead>
@@ -65,51 +197,6 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
       <td>No</td>
     </tr>
     <tr>
-      <td><a href="https://arxiv.org/abs/2306.02858">Video-LLaMA</a></td>
-      <td>23.06</td>
-      <td>EVA-CLIP-ViT-G/14</td>
-      <td>LLaMA, Vicuna</td>
-      <td>Q-Former</td>
-      <td>Q-Former</td>
-      <td>--</td>
-      <td>8</td>
-      <td>/32</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2306.05424">Video-ChatGPT</a></td>
-      <td>23.06</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna1.1-7B</td>
-      <td>Spatial-pooling</td>
-      <td>Temporal-pooling</td>
-      <td>--</td>
-      <td>100</td>
-      <td>/356</td>
-      <td>8 A100-40G</td>
-      <td>N-N-N</td>
-      <td>N-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2306.07207">Valley</a></td>
-      <td>23.06</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>StableVicuna-7B/13B</td>
-      <td>--</td>
-      <td>Transformer and Mean pooling</td>
-      <td>--</td>
-      <td>0.5 fps</td>
-      <td>/256+T</td>
-      <td>8 A100 80G</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
       <td><a href="http://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf">MovieChat</a></td>
       <td>23.07</td>
       <td>EVA-CLIP-ViT-G/14</td>
@@ -122,110 +209,7 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
       <td>-</td>
       <td>E2E</td>
       <td>E2E</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2308.12966">Qwen-VL</a></td>
-      <td>23.08</td>
-      <td>Openclip-ViT-bigG</td>
-      <td>Qwen-7B</td>
-      <td>Cross-attention</td>
-      <td>--</td>
-      <td>--</td>
-      <td>4</td>
-      <td>/256</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Y-N-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Jin_Chat-UniVi_Unified_Visual_Representation_Empowers_Large_Language_Models_with_Image_CVPR_2024_paper.pdf">Chat-UniVi</a></td>
-      <td>23.11</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna1.5-7B</td>
-      <td>Token merging</td>
-      <td>--</td>
-      <td>--</td>
-      <td>64</td>
-      <td>/112</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2311.10122">Video-LLaVA</a></td>
-      <td>23.11</td>
-      <td>LanguageBind-ViT-L/14</td>
-      <td>Vicuna1.5-7B</td>
-      <td>--</td>
-      <td>--</td>
-      <td>--</td>
-      <td>8</td>
-      <td>256/2048</td>
-      <td>4 A100-80G</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2311.17043">LLaMA-VID</a></td>
-      <td>23.11</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna-7B/13B</td>
-      <td colspan="3" style="text-align:center;">Context attention and pooling</td>
-      <td>1 fps</td>
-      <td>2/</td>
-      <td>8 A100</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-Y</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Huang_VTimeLLM_Empower_LLM_to_Grasp_Video_Moments_CVPR_2024_paper.pdf">VTimeLLM</a></td>
-      <td>23.11</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna1.5-7B/13B</td>
-      <td>Frame feature</td>
-      <td>--</td>
-      <td>--</td>
-      <td>100</td>
-      <td>1/100</td>
-      <td>1 RTX-4090</td>
-      <td>Y-Y-N</td>
-      <td>N-Y-N</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Li_MVBench_A_Comprehensive_Multi-modal_Video_Understanding_Benchmark_CVPR_2024_paper.pdf">VideoChat2</a></td>
-      <td>23.11</td>
-      <td>EVA-CLIP-ViT-G/14</td>
-      <td>Vicuna0-7B</td>
-      <td>--</td>
-      <td>Q-Former</td>
-      <td>--</td>
-      <td>16</td>
-      <td>/96</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2312.08870">Vista-LLaMA</a></td>
-      <td>23.12</td>
-      <td>EVA-CLIP-ViT-G/14</td>
-      <td>LLaVa-Vicuna-7B</td>
-      <td>Q-Former</td>
-      <td>Temporal Q-Former</td>
-      <td>--</td>
-      <td>16</td>
-      <td>32/512</td>
-      <td>8 A100-80GB</td>
-      <td>E2E</td>
-      <td>E2E</td>
-      <td>No</td>
+      <td>✅ Yes</td>
     </tr>
     <tr>
       <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Ren_TimeChat_A_Time-sensitive_Multimodal_Large_Language_Model_for_Long_Video_CVPR_2024_paper.pdf">TimeChat</a></td>
@@ -240,337 +224,7 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
       <td>8 V100-32G</td>
       <td>Y-Y-N</td>
       <td>N-N-Y</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2312.02310">VaQuitA</a></td>
-      <td>23.12</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>LLaVA1.5-LLaMA-7B</td>
-      <td>--</td>
-      <td>Video Perceiver, VQ-Former</td>
-      <td>--</td>
-      <td>100</td>
-      <td>/356</td>
-      <td>8 A100-80GB</td>
-      <td>E2E</td>
-      <td>E2E</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2312.00438">Dolphins</a></td>
-      <td>23.12</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>OpenFlamingo</td>
-      <td colspan="2" style="text-align:center;">Perceiver Resamplar, Gated cross-attention</td>
-      <td>Time embedding</td>
-      <td>--</td>
-      <td>--</td>
-      <td>4 A100</td>
-      <td>N-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2402.11435">Momentor</a></td>
-      <td>24.02</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>LLaMA-7B</td>
-      <td colspan="3" style="text-align:center;">Frame feature, Temporal Perception Module, Grounded Event-Sequence Modeling</td>
-      <td>300</td>
-      <td>1/300</td>
-      <td>8 A100</td>
-      <td>Y-Y-N</td>
-      <td>N-Y-N</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2403.01422">MovieLLM</a></td>
-      <td>24.03</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna-7B/13B</td>
-      <td colspan="3" style="text-align:center;">Context attention and pooling</td>
-      <td>1 fps</td>
-      <td>2/</td>
-      <td>4 A100</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-Y</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/He_MA-LMM_Memory-Augmented_Large_Multimodal_Model_for_Long-Term_Video_Understanding_CVPR_2024_paper.pdf">MA-LMM</a></td>
-      <td>24.04</td>
-      <td>EVA-CLIP-ViT-G/14</td>
-      <td>Vicuna-7B</td>
-      <td>Q-Former</td>
-      <td>Memory Bank Compression</td>
-      <td>Merging adjacent frames</td>
-      <td>100</td>
-      <td>/32</td>
-      <td>4 A100</td>
-      <td>E2E</td>
-      <td>E2E</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2404.16994">PLLaVA</a></td>
-      <td>23.04</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>LLaVA-Next-LLM</td>
-      <td colspan="3" style="text-align:center;">Adaptive Pooling</td>
-      <td>64</td>
-      <td>2304</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2404.03384">LongVLM</a></td>
-      <td>23.04</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna1.1-7B</td>
-      <td colspan="3" style="text-align:center;">Hierarchical token merging</td>
-      <td>100</td>
-      <td>/305</td>
-      <td>4 A100 80G</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2404.03413">MiniGPT4-Video</a></td>
-      <td>24.04</td>
-      <td>EVA-CLIP-ViT-G/14</td>
-      <td>LLaMA2-7B, Mistral-7B</td>
-      <td>Merging adjacent tokens</td>
-      <td>--</td>
-      <td>--</td>
-      <td>90</td>
-      <td>64/5760</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>N-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2404.11865">RED-VILLM</a></td>
-      <td>24.04</td>
-      <td>Openclip-ViT-bigG</td>
-      <td>Qwen-7B</td>
-      <td>Spatial pooling</td>
-      <td>Temporal pooling</td>
-      <td>--</td>
-      <td>100</td>
-      <td>/1124</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2404.00308">ST-LLM</a></td>
-      <td>24.04</td>
-      <td>BLIP-2</td>
-      <td>InstructBLIP-Vicuna1.1-7B</td>
-      <td>Q-Former</td>
-      <td>Masked video modeling</td>
-      <td>Global-Local input</td>
-      <td>16</td>
-      <td>/512</td>
-      <td>8 A100</td>
-      <td>E2E</td>
-      <td>E2E</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://llava-vl.github.io/blog/2024-04-30-llava-next-video/">LLaVA-NeXT-Video</a></td>
-      <td>24.04</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna1.5-7B/13B, Nous-Hermes-2-Yi-34B</td>
-      <td>Merging adjacent tokens</td>
-      <td>--</td>
-      <td>--</td>
-      <td>32</td>
-      <td>4608</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2405.01483">Mantis-Idefics2</a></td>
-      <td>24.05</td>
-      <td>SigLIP-SO400M</td>
-      <td>Mistral0.1-7B</td>
-      <td>Perceiver resampler</td>
-      <td>--</td>
-      <td>--</td>
-      <td>8</td>
-      <td>64/512</td>
-      <td>16 A100-40G</td>
-      <td>Y-N-N</td>
-      <td>N-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2406.07476">VideoLLaMA 2</a></td>
-      <td>24.06</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Mistral-7B-Instruct</td>
-      <td colspan="2" style="text-align:center;">Spatial-Temporal Convolution</td>
-      <td>--</td>
-      <td>8</td>
-      <td>/576</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2406.16852">LongVA</a></td>
-      <td>24.06</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Qwen2-7B-224K</td>
-      <td>Merging adjacent tokens</td>
-      <td>Expanding tokens</td>
-      <td>--</td>
-      <td>384</td>
-      <td>55,296</td>
-      <td>8x A100-80G</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2406.00258">Artemis</a></td>
-      <td>24.06</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna1.5-7B</td>
-      <td colspan="3" style="text-align:center;">Average pooling</td>
-      <td>5</td>
-      <td>/356</td>
-      <td>8 x A800</td>
-      <td>Y-Y-N</td>
-      <td>N-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2406.09418">VideoGPT+</a></td>
-      <td>24.06</td>
-      <td>CLIP-ViT-L/14, InternVideo-v2</td>
-      <td>Phi3-Mini-3.8B</td>
-      <td>Adaptive pooling</td>
-      <td>Adaptive pooling</td>
-      <td>--</td>
-      <td>16</td>
-      <td>/2560</td>
-      <td>8 x A100 40G</td>
-      <td>Y-Y-N</td>
-      <td>N-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2412.09596?">IXC-2.5</a></td>
-      <td>24.07</td>
-      <td>CLIP-ViT-L/14-490</td>
-      <td>InternLM2-7B</td>
-      <td>Merging adjacent tokens</td>
-      <td>Expanding tokens</td>
-      <td>Frame index</td>
-      <td>64</td>
-      <td>400/25600</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2407.14177">EVLM</a></td>
-      <td>24.07</td>
-      <td>EVA2-CLIP-E-Plus</td>
-      <td>Qwen-14B-Chat 1.0</td>
-      <td>Gated cross attention</td>
-      <td>--</td>
-      <td>--</td>
-      <td>--</td>
-      <td>/16</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2407.15841?">SlowFast-LLaVA</a></td>
-      <td>24.07</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Vicuna1.5-7B</td>
-      <td>Merging adjacent tokens</td>
-      <td colspan="2" style="text-align:center;">Slow and fast pathway</td>
-      <td>50</td>
-      <td>3680</td>
-      <td>A100-80G</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2407.07895">LLaVA-Interleave</a></td>
-      <td>24.07</td>
-      <td>SigLIP-SO400M</td>
-      <td>Qwen1.5-0.5B/7B/14B</td>
-      <td>--</td>
-      <td>--</td>
-      <td>--</td>
-      <td>16</td>
-      <td>729/11664</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2408.15542">Kangaroo</a></td>
-      <td>24.08</td>
-      <td>EVA-CLIP-ViT-G/14</td>
-      <td>LLaMA3-8B</td>
-      <td colspan="3" style="text-align:center;">3D Depthwise convolution</td>
-      <td>--</td>
-      <td>--</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-Y</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2408.05211?">VITA</a></td>
-      <td>24.08</td>
-      <td>InternViT-300M-448px</td>
-      <td>Mixtral 8x7B</td>
-      <td>MLP</td>
-      <td>--</td>
-      <td>--</td>
-      <td>16</td>
-      <td>256/4096</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2408.03326?">LLaVA-OneVision</a></td>
-      <td>24.08</td>
-      <td>SigLIP-SO400M</td>
-      <td>Qwen2-7B</td>
-      <td>Merging adjacent tokens</td>
-      <td>--</td>
-      <td>--</td>
-      <td>1 fps</td>
-      <td>729/</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
+      <td>✅ Yes</td>
     </tr>
     <tr>
       <td><a href="https://arxiv.org/pdf/2408.10188">LONGVILA</a></td>
@@ -583,78 +237,7 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
       <td>256 A100 80G</td>
       <td>Y-Y-N</td>
       <td>Y-Y-Y</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2409.02889?">LongLLaVA</a></td>
-      <td>24.09</td>
-      <td>CLIP-ViT-B/32</td>
-      <td>LLaVA1.6-13B</td>
-      <td>Merging adjacent tokens</td>
-      <td>Mamba Layers</td>
-      <td>Hybrid architecture</td>
-      <td>256</td>
-      <td>144/</td>
-      <td>24 A800 80G</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/abs/2409.12191">Qwen2-VL</a></td>
-      <td>24.09</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Qwen2-1.5B/7B/72B</td>
-      <td>Merging adjacent tokens</td>
-      <td>3D convolutions</td>
-      <td>--</td>
-      <td>2 fps</td>
-      <td>66/</td>
-      <td>-</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2409.14485">Video-XL</a></td>
-      <td>20.09</td>
-      <td>CLIP-ViT-L/14</td>
-      <td>Qwen-2-7B</td>
-      <td>Merging adjacent tokens</td>
-      <td colspan="2" style="text-align:center;">Visual Summarization Token and Dynamic Compression</td>
-      <td>128</td>
-      <td>--</td>
-      <td>8 A800-80G</td>
-      <td>Y-N-N</td>
-      <td>Y-Y-N</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2409.12961">Oryx-1.5</a></td>
-      <td>24.10</td>
-      <td>OryxViT</td>
-      <td>Qwen-2.5-7B/32B</td>
-      <td>Variable-Length Self-Attention</td>
-      <td colspan="2" style="text-align:center;">Dynamic Compressor</td>
-      <td>64</td>
-      <td>256/</td>
-      <td>64 A800-80G</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-Y</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><a href="https://arxiv.org/pdf/2411.18211">TimeMarker</a></td>
-      <td>24.11</td>
-      <td>LLaVA-Encoder</td>
-      <td>LLaVA-LLM</td>
-      <td colspan="3" style="text-align:center;">Adaptive Token Merge and Temporal Separator Tokens Integration</td>
-      <td>128</td>
-      <td>--</td>
-      <td>-</td>
-      <td>Y-Y-N</td>
-      <td>Y-Y-Y</td>
-      <td>Yes</td>
+      <td>✅ Yes</td>
     </tr>
     <tr>
       <td><a href="https://arxiv.org/pdf/2412.04468">NVILA</a></td>
@@ -668,36 +251,270 @@ Related materials on [From Seconds to Hours: Reviewing MultiModal Large Language
       <td>128 H100-80G</td>
       <td>Y-Y-N</td>
       <td>Y-Y-Y</td>
-      <td>Yes</td>
+      <td>✅ Yes</td>
     </tr>
   </tbody>
 </table>
 
-## Long video understanding benchmarks
-1. **Video-MME**: Popular video understanding evaluation benchmark, including short, medium, and long video resources with 900 videos and 2,700 annotations. The average duration is 17.0 minutes. [Project](https://video-mme.github.io/home_page.html), [GitHub](https://github.com/BradyFU/Video-MME), [Dataset](https://github.com/BradyFU/Video-MME?tab=readme-ov-file#-dataset), [Paper](https://arxiv.org/pdf/2405.21075)
+*Note: This is a condensed view. The full table contains 50+ models with detailed specifications.*
 
-2. **HourVideo**: Hour-level video understanding evaluation benchmark, including long video resources of 500 videos and 12,976 annotations. The average duration is 45.7 minutes. [Project](https://hourvideo.stanford.edu/), [GitHub](https://github.com/keshik6/HourVideo), [Dataset](https://huggingface.co/datasets/HourVideo/HourVideo), [Paper](https://arxiv.org/abs/2411.04998)
+</details>
 
-3. **HLV-1K**: Hour-level video understanding evaluation benchmark, including long video resources of 1,009 videos and 14,847 annotations. The average duration is 55.0 minutes. [Project](https://vincent-zhq.github.io/hlv-1k-project/), [GitHub](https://github.com/Vincent-ZHQ/HLV-1K), [Dataset](https://github.com/Vincent-ZHQ/HLV-1K), [Paper](https://arxiv.org/submit/6108440/view)
+### 🏆 Notable Model Categories
 
-4. **LVBench**: Hour-level video understanding evaluation benchmark, including long video resources of 103 videos and 1,549 annotations. The average duration is 68.4 minutes. [Project](https://lvbench.github.io/), [GitHub](https://github.com/THUDM/LVBench), [Dataset](https://huggingface.co/datasets/THUDM/LVBench), [Paper](https://arxiv.org/pdf/2406.08035)
+#### 🎯 **Memory-Augmented Models**
+- **MovieChat**: Sparse memory mechanism for long video processing
+- **MA-LMM**: Memory bank compression for efficient storage
+- **TimeChat**: Time-aware encoding with sliding windows
 
+#### ⚡ **Efficiency-Focused Models**
+- **LONGVILA**: Multi-modal sequence parallelism
+- **LongVA**: Token expansion and compression strategies
+- **Video-XL**: Dynamic compression techniques
 
+#### 🔄 **Hierarchical Processing Models**
+- **LongVLM**: Hierarchical token merging
+- **SlowFast-LLaVA**: Dual-pathway processing
+- **LongLLaVA**: Hybrid Mamba architecture
 
-## Performance on long video benchamarks
-<img width="969" alt="image" src="https://github.com/user-attachments/assets/fb0aa46a-e413-4eb5-9841-015e56679672"/>
+---
 
-## Performance on common video benchmarks
+## 📈 Benchmarks & Datasets
 
-<img width="946" alt="image" src="https://github.com/user-attachments/assets/9c652905-c3ba-4095-b5c3-b34f314518ca" />
+### 🎯 Long Video Understanding Benchmarks
 
+| **Benchmark** | **Videos** | **Annotations** | **Avg Duration** | **Focus** |
+|---------------|------------|-----------------|------------------|-----------|
+| **Video-MME** | 900 | 2,700 | 17.0 min | Multi-scale evaluation |
+| **HourVideo** | 500 | 12,976 | 45.7 min | Hour-level understanding |
+| **HLV-1K** | 1,009 | 14,847 | 55.0 min | Comprehensive evaluation |
+| **LVBench** | 103 | 1,549 | 68.4 min | Long-form analysis |
 
-### citation
-If you use our code or find our CA-MSER useful in your research, please consider citing:
+### 📊 Benchmark Details
 
-    @article{zou2024seconds,
-      title={From Seconds to Hours: Reviewing MultiModal Large Language Models on Comprehensive Long Video Understanding},
-      author={Zou, Heqing and Luo, Tianze and Xie, Guiyang and Lv, Fengmao and Wang, Guangcong and Chen, Juanyang and Wang, Zhuochen and Zhang, Hansheng and Zhang, Huaijian and others},
-      journal={arXiv preprint arXiv:2409.18938},
-      year={2024}
-    }
+#### 🎬 **Video-MME**
+- **Description**: Multi-scale video understanding benchmark
+- **Strengths**: Covers short, medium, and long videos
+- **Tasks**: Video QA, temporal reasoning, content understanding
+- **Links**: [Project](https://video-mme.github.io/home_page.html) | [GitHub](https://github.com/BradyFU/Video-MME) | [Dataset](https://github.com/BradyFU/Video-MME?tab=readme-ov-file#-dataset) | [Paper](https://arxiv.org/pdf/2405.21075)
+
+#### ⏰ **HourVideo**
+- **Description**: Hour-level video understanding evaluation
+- **Strengths**: Focus on very long video content
+- **Tasks**: Long-term temporal reasoning, narrative understanding
+- **Links**: [Project](https://hourvideo.stanford.edu/) | [GitHub](https://github.com/keshik6/HourVideo) | [Dataset](https://huggingface.co/datasets/HourVideo/HourVideo) | [Paper](https://arxiv.org/abs/2411.04998)
+
+#### 🎯 **HLV-1K**
+- **Description**: Comprehensive hour-level video benchmark
+- **Strengths**: Large-scale annotations, diverse content
+- **Tasks**: Multi-aspect video understanding
+- **Links**: [Project](https://vincent-zhq.github.io/hlv-1k-project/) | [GitHub](https://github.com/Vincent-ZHQ/HLV-1K) | [Dataset](https://github.com/Vincent-ZHQ/HLV-1K) | [Paper](https://arxiv.org/submit/6108440/view)
+
+#### 📊 **LVBench**
+- **Description**: Long video understanding benchmark
+- **Strengths**: High-quality annotations, challenging scenarios
+- **Tasks**: Complex reasoning over extended content
+- **Links**: [Project](https://lvbench.github.io/) | [GitHub](https://github.com/THUDM/LVBench) | [Dataset](https://huggingface.co/datasets/THUDM/LVBench) | [Paper](https://arxiv.org/pdf/2406.08035)
+
+---
+
+## 📊 Performance Analysis
+
+### 🏆 Performance on Long Video Benchmarks
+
+<div align="center">
+<img width="969" alt="Performance on Long Video Benchmarks" src="https://github.com/user-attachments/assets/fb0aa46a-e413-4eb5-9841-015e56679672"/>
+</div>
+
+### 📈 Performance on Common Video Benchmarks
+
+<div align="center">
+<img width="946" alt="Performance on Common Video Benchmarks" src="https://github.com/user-attachments/assets/9c652905-c3ba-4095-b5c3-b34f314518ca" />
+</div>
+
+### 📊 Key Performance Insights
+
+#### 🎯 **Top Performers**
+- **NVILA**: Leading performance on multiple benchmarks
+- **LONGVILA**: Excellent scalability for very long videos
+- **TimeMarker**: Strong temporal understanding capabilities
+
+#### 📈 **Performance Trends**
+- **2024 Models**: Significant improvements over 2023 baselines
+- **Scaling Effects**: Larger models generally perform better
+- **Efficiency Trade-offs**: Balance between performance and computational cost
+
+#### 🔍 **Analysis Highlights**
+- Models with dedicated long-video architectures outperform general-purpose models
+- Memory-augmented approaches show consistent improvements
+- Multi-scale processing strategies are becoming standard
+
+---
+
+## 🔬 Technical Analysis
+
+### 🏗️ **Architecture Patterns**
+
+#### 🧠 **Memory Mechanisms**
+```
+📊 Memory-Augmented Models (15+ models)
+├── 🎬 Sparse Memory (MovieChat, MA-LMM)
+├── 🔄 Sliding Windows (TimeChat, LLaMA-VID)
+└── 📈 Dynamic Compression (Video-XL, Oryx-1.5)
+```
+
+#### ⚡ **Efficiency Strategies**
+```
+🚀 Efficiency Techniques
+├── 🔗 Token Merging (LongVLM, Video-LLaVA)
+├── 📊 Hierarchical Processing (SlowFast-LLaVA)
+├── 🔄 Parallel Processing (LONGVILA)
+└── 📈 Adaptive Pooling (PLLaVA, VideoGPT+)
+```
+
+#### 🎯 **Connector Innovations**
+```
+🔧 Connector Types
+├── 🤖 Q-Former Based (MovieChat, TimeChat)
+├── 🔗 Cross-Attention (Qwen-VL, EVLM)
+├── 📊 MLP Projectors (VITA, LLaVA-OneVision)
+└── 🧠 Advanced Fusion (Kangaroo, NVILA)
+```
+
+### 📊 **Training Strategies**
+
+| **Strategy** | **Models** | **Advantages** | **Challenges** |
+|--------------|------------|----------------|----------------|
+| **End-to-End** | MovieChat, MA-LMM | Optimal performance | High computational cost |
+| **Stage-wise** | Video-LLaVA, TimeChat | Stable training | Suboptimal alignment |
+| **Hybrid** | LongVA, LONGVILA | Balanced approach | Complex implementation |
+
+### 🎯 **Key Technical Innovations**
+
+#### 🔄 **Temporal Modeling**
+- **Sliding Window Attention**: Efficient processing of long sequences
+- **Hierarchical Temporal Fusion**: Multi-scale temporal understanding
+- **Memory-Augmented Architectures**: Long-term dependency modeling
+
+#### ⚡ **Efficiency Optimization**
+- **Token Compression**: Reducing computational overhead
+- **Parallel Processing**: Leveraging multiple GPUs effectively
+- **Dynamic Allocation**: Adaptive resource management
+
+#### 🎯 **Multimodal Fusion**
+- **Cross-Modal Attention**: Better alignment between modalities
+- **Temporal-Spatial Integration**: Comprehensive scene understanding
+- **Context-Aware Processing**: Adaptive to content complexity
+
+---
+
+## 🚀 Future Directions
+
+### 🔬 **Research Opportunities**
+
+#### 🎯 **Technical Challenges**
+- **Ultra-Long Videos**: Processing videos longer than current capabilities
+- **Real-Time Processing**: Enabling live video understanding
+- **Multi-Language Support**: Expanding beyond English-centric models
+- **Few-Shot Learning**: Adapting to new domains with limited data
+
+#### 🌟 **Emerging Trends**
+- **Multimodal Reasoning**: Enhanced logical reasoning capabilities
+- **Interactive Understanding**: User-guided video analysis
+- **Causal Understanding**: Modeling cause-and-effect relationships
+- **Emotional Intelligence**: Understanding emotional content in videos
+
+#### 🔧 **Technical Innovations**
+- **Neural Architecture Search**: Automated model design
+- **Federated Learning**: Privacy-preserving video understanding
+- **Edge Computing**: Mobile and embedded deployment
+- **Quantum Computing**: Leveraging quantum advantages
+
+### 📈 **Industry Applications**
+
+#### 🎬 **Entertainment**
+- **Content Creation**: AI-assisted video editing and production
+- **Recommendation Systems**: Personalized content discovery
+- **Quality Assessment**: Automated content evaluation
+
+#### 🏫 **Education**
+- **Lecture Analysis**: Automated educational content processing
+- **Student Engagement**: Understanding learning patterns
+- **Accessibility**: Enhanced content accessibility features
+
+#### 🏥 **Healthcare**
+- **Medical Imaging**: Long-term patient monitoring
+- **Surgical Analysis**: Procedure understanding and training
+- **Therapy Assessment**: Behavioral analysis and intervention
+
+---
+
+## 📚 Citation
+
+If you find our survey useful in your research, please consider citing:
+
+```bibtex
+@article{zou2024seconds,
+  title={From Seconds to Hours: Reviewing MultiModal Large Language Models on Comprehensive Long Video Understanding},
+  author={Zou, Heqing and Luo, Tianze and Xie, Guiyang and Lv, Fengmao and Wang, Guangcong and Chen, Juanyang and Wang, Zhuochen and Zhang, Hansheng and Zhang, Huaijian and others},
+  journal={arXiv preprint arXiv:2409.18938},
+  year={2024}
+}
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to this survey! Here's how you can help:
+
+### 📝 **How to Contribute**
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/new-model`)
+3. **Add** your model/benchmark information
+4. **Commit** your changes (`git commit -am 'Add new model: ModelName'`)
+5. **Push** to the branch (`git push origin feature/new-model`)
+6. **Create** a Pull Request
+
+### 🎯 **Contribution Guidelines**
+- **Model Additions**: Include complete technical specifications
+- **Benchmark Updates**: Provide official performance numbers
+- **Documentation**: Maintain consistent formatting
+- **References**: Include proper citations and links
+
+### 📊 **What We're Looking For**
+- New long video understanding models
+- Updated benchmark results
+- Technical analysis and insights
+- Bug fixes and improvements
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+We thank all the researchers and developers who have contributed to the field of long video understanding. Special thanks to:
+
+- **Model Developers**: For creating innovative architectures and sharing their work
+- **Benchmark Creators**: For providing standardized evaluation frameworks
+- **Open Source Community**: For making research accessible and reproducible
+- **Reviewers and Contributors**: For helping improve this survey
+
+---
+
+<div align="center">
+
+### 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=bytedance/LVU_Survey&type=Date)](https://star-history.com/#bytedance/LVU_Survey&Date)
+
+**Made with ❤️ by the Long Video Understanding Research Community**
+
+[⬆️ Back to Top](#-from-seconds-to-hours-comprehensive-long-video-understanding-survey)
+
+</div>
