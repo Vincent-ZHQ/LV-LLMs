@@ -6,14 +6,19 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://github.com/Vincent-ZHQ/LV-LLMs)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/Vincent-ZHQ/LV-LLMs?style=social)](https://github.com/Vincent-ZHQ/LV-LLMs/stargazers)
+
 </div>
 
 <div align="center">
+    
 *📚 A Comprehensive Survey on MultiModal Large Language Models for Long Video Understanding*
+
 </div>
 
 <div align="center">
+    
 [📖 Paper](https://arxiv.org/pdf/2409.18938) | [🌐 Project Page](https://github.com/Vincent-ZHQ/LV-LLMs)
+    
 </div>
 
 ---
